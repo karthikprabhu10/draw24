@@ -62,7 +62,7 @@ class Polyline {
       reMax = Math.max(reMax, p.re);
       imMax = Math.max(imMax, p.im);
     }
-    return new Point((reMin + reMax) / 2, (imMin, imMax) / 2);
+    return new Point((reMin + reMax) / 2, (imMin + imMax) / 2);
   };
 }
 
