@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./assets/logo.jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>draw43</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #draw-area {
+        margin: auto;
+      }
+    </style>
+    <script src="./lib/p5.min.js"></script>
+    <script type="module">
+      import { Log } from "./utils.js";
+      import "./draw.js"; // Starts the drawing.
+
+      // Log.DEBUG_MODE = true;
+      Log.i("Testing logger: Debug mode enabled");
+    </script>
+  </head>
+  <body>
+    <canvas id="draw-area" />
+  </body>
+</html>
